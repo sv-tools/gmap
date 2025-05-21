@@ -1,9 +1,14 @@
 # gmap
 
-## Map 
 Simple Generic wrapper for [sync.Map](https://pkg.go.dev/sync#Map) 
 
-### Usage 
+The repository is archived because the feature is fully implemented and will be replaced by sync v2 package in the future.
+
+## Usage
+
+```shell
+go get github.com/sv-tools/gmap
+```
 
 ```go
 	m := gmap.New[string, int]()
@@ -13,7 +18,7 @@ Simple Generic wrapper for [sync.Map](https://pkg.go.dev/sync#Map)
 	// Output: value = (int) 42
 ```
 
-### Benchmarks
+## Benchmarks
 
 ```shell
 % go test -bench=. -benchmem ./...
